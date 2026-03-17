@@ -1,0 +1,8 @@
+from scapy.all import sniff
+
+def packet_info(packet):
+    print("Packet Captured:")
+    print(packet.summary())
+    print("---------------------------")
+
+sniff(prn=packet_info)
